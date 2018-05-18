@@ -1,0 +1,38 @@
+<h1>Welcome to Bad-Burger, Home of The Bad Burger</h1>
+<h2>Can I take your order?</h2>
+
+<h3>Fresh Burgers</h3>
+<ul>
+    {{#each burgers}}
+        {{#unless devoured}}
+            {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+    {{/each}}
+</ul>
+
+
+<h3>Half-Eaten Burgers</h3>
+<ul>
+    {{#each burgers}}
+        {{#if devoured}}
+            {{> burgers/burger-block devoured=false}}
+        {{/if}}
+    {{/each}}
+</ul>
+
+
+<h3>Create Your Own</h3>
+<form class="create-form">
+    <div class="form-group">
+        <label for="ba">Burger Name:</label>
+        <input type="text" id="ba" name="burger_name">
+    </div>
+
+    <div class="form-group">
+        <label for="devoured">Devoured?</label><br>
+        <input type="radio" name="devoured" value="1" checked> Half-Eaten <br>
+        <input type="radio" name="devoured" value="0"> Fresh
+    </div>
+
+    <button type="submit">Add Burger</button>
+</form>
