@@ -1,0 +1,30 @@
+body {
+    background-image: url("../images/burgers.jpg");
+    background-repeat: repeat;
+    background-size: 150px;
+    line-height: 1.25em;
+}
+
+.container{
+    background-color: orange;
+    margin: 25px auto;
+}
+
+#fresh{
+    /* float: left; */
+    /* background-color: white; */
+}
+
+#half{
+    /* float: right; */
+    /* background-color: white; */
+}
+
+#add {
+    /* float: center; */
+    /* background-color: white; */
+}
+
+button {
+    margin: 5px;
+}
