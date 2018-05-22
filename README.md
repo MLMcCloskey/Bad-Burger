@@ -12,3 +12,5 @@ Handlebars templating.
 Bootstrap for design aspects.
 Clipart sourced from the internet.
 Heroku for deployment. https://hidden-garden-44880.herokuapp.com/
+
+![app](./public/assets/images/badBurger.png "App in action")
